@@ -1,0 +1,16 @@
+{
+    "name": "vojtasvoboda/bugsnag",
+    "description": "Bugsnag connector.",
+    "type": "october-plugin",
+    "require": {
+        "bugsnag/bugsnag": "^3.0",
+        "mead-steve/mono-snag": "^3.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vojta Svoboda",
+            "email": "vojtasvoboda.cz@gmail.com"
+        }
+    ]
+}
