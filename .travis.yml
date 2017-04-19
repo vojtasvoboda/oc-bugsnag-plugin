@@ -14,12 +14,15 @@ sudo: false
 
 before_script:
   - git clone https://github.com/octobercms/october.git
+  - mkdir -p ./october/plugins/vojtasvoboda/errorlogger
   - mkdir -p ./october/plugins/vojtasvoboda/bugsnag
   - mv !(october) october/plugins/vojtasvoboda/bugsnag
   - cd october
   - composer self-update
   - travis_retry composer install --no-interaction --prefer-source
-  - cd plugins/vojtasvoboda/bugsnag
+  - cd plugins/vojtasvoboda/errorlogger
+  - git clone https://github.com/vojtasvoboda/oc-errorlogger-plugin.git .
+  - cd ../bugsnag
   - composer install
 
 script: ../../../vendor/bin/phpunit
