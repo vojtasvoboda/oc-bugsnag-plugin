@@ -9,6 +9,6 @@ class PluginTest extends PluginTestCase
 {
     public function testComposerWasFine()
     {
-        $this->assertTrue(class_exists(Bugsnag\Client::class));
+        $this->assertTrue(class_exists(Client::class));
     }
 }
