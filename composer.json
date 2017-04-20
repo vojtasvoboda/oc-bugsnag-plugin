@@ -16,10 +16,10 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.5.9",
         "composer/installers": "~1.0",
-        "bugsnag/bugsnag": "^3.0",
-        "mead-steve/mono-snag": "^3.0.0"
+        "bugsnag/bugsnag": "^2.2.5",
+        "mead-steve/mono-snag": "^2.0.0"
     },
     "minimum-stability": "stable",
     "scripts": {
