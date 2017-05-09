@@ -73,7 +73,7 @@ class Plugin extends PluginBase
         }
 
         $api_key = Settings::get('bugsnag_api_key');
-        $client = Bugsnag_Client::make($api_key);
+        $client = new Bugsnag_Client($api_key);
         $monolog->pushHandler(new BugsnagHandler($client));
     }
 
