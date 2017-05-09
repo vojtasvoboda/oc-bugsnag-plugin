@@ -31,8 +31,7 @@ class Plugin extends PluginBase
         $this->setBugsnagHandler($monolog);
 
         // extend ErrorLogger settings form
-        Event::listen('backend.form.extendFields', function($widget)
-        {
+        Event::listen('backend.form.extendFields', function($widget) {
             if (!$widget->model instanceof Settings) {
                 return;
             }
