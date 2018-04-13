@@ -2,3 +2,4 @@
 1.0.2: Add german locale (thanks to Patrick Durrer)
 1.0.3: Fix compatibility with PHP 5.5.9
 1.0.4: Fix initialization of Bugsnag client
+1.0.5: Update libraries versions

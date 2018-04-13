@@ -1,7 +1,8 @@
 <?php namespace VojtaSvoboda\BugSnag;
 
 use Backend;
-use Bugsnag_Client;
+use Bugsnag\Client;
+use Bugsnag\Configuration;
 use Event;
 use Log;
 use MeadSteve\MonoSnag\BugsnagHandler;
@@ -72,7 +73,8 @@ class Plugin extends PluginBase
         }
 
         $api_key = Settings::get('bugsnag_api_key');
-        $client = new Bugsnag_Client($api_key);
+        $configuration = new Configuration($api_key);
+        $client = new Client($configuration);
         $monolog->pushHandler(new BugsnagHandler($client));
     }
 
