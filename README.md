@@ -10,9 +10,9 @@ Before install be sure you have Error Logger installed.
 2. Register to [BugSnag](https://bugsnag.com/) and copy your API KEY.
 3. Set your API KEY at Backend > Settings > System > Error logger > Bugsnag.
 
-## Using PHP 5.6 or PHP 7.0?
+## Using an older version of OctoberCMS or PHP?
 
-Bugsnag plugin is made to be compatible with OctoberCMS, which means to be compatible with PHP 5.5.9. But if you are using PHP 5.6 or higher, you can use special [branch php56](https://github.com/vojtasvoboda/oc-bugsnag-plugin/tree/php56), where you can find same plugin, but with latest Bugsnag libraries used.
+Checkout branches [php55](https://github.com/vojtasvoboda/oc-bugsnag-plugin/tree/php55) and [php56](https://github.com/vojtasvoboda/oc-bugsnag-plugin/tree/php56), where you can find the same plugin, but with older Bugsnag libraries used.
 
 ## Contributing
 
